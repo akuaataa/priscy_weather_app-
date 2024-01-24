@@ -17,7 +17,7 @@ function updateTemperatureImage(imageElement, temperature) {
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/827/original/snow-day_%281%29.png?1706026047";
   } else if (temperature > 30) {
     imageElement.querySelector("img").src =
-      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/880/original/OIP.jpg?1706049114";
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/914/original/R.png?1706076823";
   } else {
     imageElement.querySelector("img").src =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/826/original/clear-sky-day.png?1706026013";
