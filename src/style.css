@@ -1,5 +1,6 @@
 body {
   background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/913/original/2e532971402124e5bd7bdae58e166cdc.jpg?1706074821");
+  backdrop-filter: blur(5px);
   font-family: "Shadows Into Light", cursive;
 }
 
