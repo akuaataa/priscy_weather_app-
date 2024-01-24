@@ -8,11 +8,7 @@ a {
 }
 
 .weather-app {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(7, 121, 222) 0%,
-    rgb(20, 72, 140) 90%
-  );
+  background: #e3f6f5;
   max-width: 640px;
   width: 100%;
   height: 100%;
@@ -58,7 +54,7 @@ main {
 /* Center the current temperature components */
 .current-temperature {
   display: flex;
-  color: #eee;
+  color: #1f1616;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -86,14 +82,14 @@ main {
 }
 
 .current-city {
-  color: #eee;
+  color: #1f1616;
   font-size: 28px;
   font-weight: 500;
   margin: 0;
 }
 
 .current-details {
-  color: rgba(251, 250, 255, 0.925);
+  color: #1f1616;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
