@@ -13,13 +13,13 @@ function showTemperature(response) {
 
 function updateTemperatureImage(imageElement, temperature) {
   if (temperature < 10) {
-    imageElement.src =
+    imageElement.querySelector("img").src =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/827/original/snow-day_%281%29.png?1706026047";
   } else if (temperature > 30) {
-    imageElement.src =
+    imageElement.querySelector("img").src =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/880/original/OIP.jpg?1706049114";
   } else {
-    imageElement.src =
+    imageElement.querySelector("img").src =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/826/original/clear-sky-day.png?1706026013";
   }
 }
