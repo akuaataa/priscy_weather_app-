@@ -3,10 +3,6 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   tempValueElement.innerHTML = `${temperature}`;
 
-  let bodyElement = document.body;
-  // Add the blur class to the body after a search
-  bodyElement.classList.add("blur-background");
-
   // Update the temperature image based on the temperature
   let temperatureImageElement = document.querySelector("#temperature-image");
   updateTemperatureImage(temperatureImageElement, temperature);
