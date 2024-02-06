@@ -3,6 +3,15 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   tempValueElement.innerHTML = `${temperature}`;
 
+  let humidityElement = document.querySelector(".humidity");
+  let windElement = document.querySelector(".wind");
+
+  let humidity = response.data.temperature.humidity;
+  let windSpeed = response.data.wind.speed;
+
+  humidityElement.innerHTML = `${humidity} %`;
+  windElement.innerHTML = `${windSpeed} km/h`;
+
   // Update the temperature image based on the temperature
   let temperatureImageElement = document.querySelector("#temperature-image");
   updateTemperatureImage(temperatureImageElement, temperature);
@@ -60,13 +69,13 @@ function formatDate(date) {
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
+let currentDateELement = document.querySelector("#current-date");
+let currentDate = new Date();
+
+currentDateELement.innerHTML = formatDate(currentDate);
 
 // Add an event listener to the search form
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-// Update the current date
-let currentDateELement = document.querySelector("#current-date");
-let currentDate = new Date();
-
-currentDateELement.innerHTML = formatDate(currentDate);
+displayForecast();
